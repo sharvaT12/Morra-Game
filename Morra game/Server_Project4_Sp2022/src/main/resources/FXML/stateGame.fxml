@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stateGame">
+   <center>
+      <VBox alignment="CENTER" prefHeight="395.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <HBox alignment="CENTER" prefHeight="154.0" prefWidth="600.0">
+            <VBox prefHeight="154.0" prefWidth="158.0">
+               <Label fx:id="player1Play" text="Player 1 played :" />
+               <Label fx:id="player2Play" text="Player 2 played :" />
+               <Label fx:id="winnerPlayer" mouseTransparent="true" prefHeight="18.0" prefWidth="144.0" text="Winner of the round :" />
+               <Label fx:id="clientConnected" text="Clients connected :" />
+               <Label fx:id="player1Points" text="Player 1 points :" />
+               <Label fx:id="player2Points" text="Player 2 points :" />
+               <Label fx:id="finalWin" text="Final winner :" />
+               <Label fx:id="playAgain" text="Will play again : " />
+            </VBox>
+            <VBox prefHeight="141.0" prefWidth="105.0">
+               <Label fx:id="int1Play" />
+               <Label fx:id="int2Play" />
+               <Label fx:id="intWinnerOfPlay" mouseTransparent="true" />
+               <Label fx:id="intClientCon" />
+               <Label fx:id="int1Points" />
+               <Label fx:id="int2Points" />
+               <Label fx:id="boolFinalWin" />
+               <Label fx:id="boolPlayAgain" />
+            </VBox>
+         </HBox>
+      </VBox>
+   </center>
+   <bottom>
+      <Button fx:id="exitServer" mnemonicParsing="false" text="Exit server" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <HBox alignment="CENTER" prefHeight="338.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="listViewLog" minHeight="-Infinity" minWidth="-Infinity" prefHeight="66.0" prefWidth="521.0">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></ListView>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

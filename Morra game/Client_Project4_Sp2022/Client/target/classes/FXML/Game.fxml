@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<!-- I ADDED THE CONTROLLER TO THE GUI-->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game">
+   <children>
+      <ListView fx:id="listViewClient" layoutX="114.0" layoutY="144.0" prefHeight="94.0" prefWidth="473.0" />
+      <Button layoutX="322.0" layoutY="534.0" mnemonicParsing="false" onAction="#sendMorraInfo" text="Submit" />
+      <HBox alignment="CENTER" layoutX="176.0" layoutY="320.0" prefHeight="0.0" prefWidth="215.0" spacing="5.0">
+         <children>
+            <Button fx:id="zeroButton" onAction="#zeroFunction">
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/noFingers.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="oneButton" onAction="#oneFunction">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/oneFinger.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+
+<!--            <ImageView fx:id="twoOption" fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">-->
+
+            <Button fx:id="twoButton" onAction="#twoFunction">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/twoFingers.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+
+<!--            <ImageView fx:id="threeOption" fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">-->
+<!--               <image>-->
+<!--                  <Image url="@../Images/threeFingers.png" />-->
+<!--               </image>-->
+<!--            </ImageView>-->
+
+            <Button fx:id="threeButton" onAction="#threeFunction">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/threeFingers.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+<!--            -->
+<!--            <ImageView fx:id="fourOption" fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">-->
+<!--               <image>-->
+<!--                  <Image url="@../Images/fourFingers.png" />-->
+<!--               </image>-->
+<!--            </ImageView>-->
+
+            <Button fx:id="fourButton" onAction="#fourFunction">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/fourFingers.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="fiveButton" onAction="#fiveFunction">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/fiveFingers.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="226.0" layoutY="432.0" prefHeight="14.0" prefWidth="248.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Total Guess :">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="totalGuess" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
